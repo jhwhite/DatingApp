@@ -21,7 +21,6 @@ namespace DatingApp.API.Controllers
         [HttpGet]
         public async Task<IActionResult> GetValues()
         {
-            //return new string[] { "value1", "value3" };
             var values = await _context.Values.ToListAsync();
             return Ok(values);
         }
